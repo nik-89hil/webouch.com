@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(172, 172, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3em;
+    box-shadow: 2px 2px 50px blue;
+    position: sticky;
+    top: 0;
+    z-index: +500;
+}
+
+.left{
+    width: 30%;
+    min-width: 320px;
+
+}
+
+.right{
+    display: flex;
+    border:none;
+    padding: .5em;
+}
+
+.right a{
+    color: black;
+    padding: 2px 5px;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.right a:hover{
+    color: blue;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.right .active{
+    color: white;
+}
+
+.home{
+    text-align: center;
+    padding-block: 2em;
+    margin-block: 2vh;
+}
+
+.home .image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    margin-block: 5vh;
+}
+
+
+.home .image div{
+    width: 320px;
+    margin: 5px;
+    height: auto;
+}
+
+.home div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform .4s linear;
+    border-radius: 5px;
+}
+
+.home div img:hover{
+    transform: scale(1.1);
+}
+
+.home div .heading{
+    color: blue;
+    text-transform: capitalize;
+    margin-block: 9px;
+}
+
+.tag{
+    width: 60%;
+    min-width: 320px;
+    margin: auto;
+    margin-block: 4vh;
+}
+
+.tag span{
+    box-shadow: 2px 2px 16px green;
+    border-radius: 8px;
+    padding: 2px 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.rate{
+    color: green;
+    font-size: 30px;
+}
+
+@media screen and (max-width:660px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .header .left,
+    .header .right{
+        width:100% ;
+        min-width: none;
+    }
+
+    .header .left{
+        text-align: center;
+    }
+
+    .header .right{
+        justify-content: space-evenly;
+    }
+
+}

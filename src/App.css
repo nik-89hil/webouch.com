@@ -1,0 +1,122 @@
+.about{
+    width: 60%;
+    margin: auto;
+    min-width: 320px;
+    margin-block: 10vh;
+    line-height: 2;
+}
+
+.show{
+    width: 70%;
+    margin: auto;
+    min-width: 320px;
+}
+
+.show img{
+    object-fit: contain;
+    width: 100%;
+    transition: all .4s ease-in-out;
+    margin-block: 4vh;
+    z-index: -5;
+}
+
+.show img:hover{
+    transform: scale(1.1);
+    border-radius: 9px;
+}
+
+.show .heading{
+    color: blue;
+    font-weight: 600;
+    margin-block: 2vh;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 10vh;
+}
+
+.price .topic{
+    font-size: 25px;
+
+}
+
+.classic,
+.premium{
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid rgb(89, 89, 240);
+    margin: 9px;
+}
+
+.classic:hover{
+    border: 2px solid green;
+
+}
+
+.classic:hover > .content{
+    background-color: rgb(190, 255, 190);
+}
+
+.classic .content,
+.premium .content{
+    width: 95%;
+    margin: auto;
+    background-color: rgb(216, 216, 245);
+    padding: 1em;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+    border-radius: 8px;
+    line-height: 2;
+    transition: all .5s linear;
+}
+
+
+.classic .content li,
+.premium .content li{
+    list-style-type: none;
+}
+
+.want{
+    background-color: white;
+    border: none;
+    padding: .4em .6em;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+
+.premium:hover{
+    border: 2px solid gold;
+
+}
+
+.premium:hover > .content{
+    background-color: rgb(230, 204, 56);
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-block: .7em;
+    color: white;
+    opacity: .7;
+}
+
+.footer .links a{
+    font-size: 25px;
+    margin: 5px;
+}
+
+.links a i{
+    color: white;
+}
